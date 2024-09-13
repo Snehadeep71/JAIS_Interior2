@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*-----------------contact us section 1 html starts here----------------*/
+
+
+/*---------------------------------------------------------------------*/
+.csec-01{
+	width: 100%;
+	min-height: 100vh;
+	align-items: center;
+	text-align: center;
+}
+.csec-01 iframe{
+	margin: auto;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+/*-------------contact section 1 css starts here--------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+	.csec-01{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+	}
+}
+/*-------------contact section 1 css ends here--------------*/
+/*-------------contact section 2 css starts here--------------*/
+.csec-02{
+	width: 100%;
+	min-height: 100vh;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background: url(images/g14.jpg) fixed center center/cover;
+	padding: 30px 0px;
+	box-sizing: border-box;
+
+}
+.csec-02 h2{
+	color: #764c25;
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.contactformsection{
+	display: flex;
+	width: 100%;
+	max-width: 80%;
+	height: auto;
+	
+	margin: 0 auto;
+	
+}
+.contactleft,.contactright{
+	gap: 20px;
+	flex: 1 0 40%;
+}
+.contactleft img{
+	width: 100%;
+	max-width: 80%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	margin: auto auto;
+	
+}
+.contactright{
+	background-color: #fff;
+	text-align: left;
+	padding: 20px;
+	box-sizing: border-box;
+	
+}
+form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	gap: 20px;
+	box-sizing: border-box;
+}
+#email,#name{
+	flex: 1 1 50%;
+	display: block;
+	flex-wrap: wrap;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#phone{
+	flex: 1 0 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#message{
+	height: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+/*-------------contact section 2 css ends here--------------*/
+/*--------------------------responsive css starts here-------------------------------------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+	.csec-02{
+		text-align: center;
+		align-items: center;
+		/* padding: 10px; */
+		box-sizing: border-box;
+	}
+	.contactformsection{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		/* padding: 20px; */
+		box-sizing: border-box;
+	}
+	.contactleft{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.contactleft img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	.contactright{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.contactrigh form{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+/*--------------------------responsive css ends here-------------------------------------------*/
