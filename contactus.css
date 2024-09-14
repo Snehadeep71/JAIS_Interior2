@@ -8,8 +8,9 @@
 
 /*---------------------------------------------------------------------*/
 .csec-01{
+	display: flex;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 50vh;
 	align-items: center;
 	text-align: center;
 }
@@ -18,6 +19,54 @@
 	align-items: center;
 	width: 100%;
 	height: 100vh;
+	object-fit: cover;
+	margin: 0 auto;
+	justify-content: center;
+}
+.contactright{
+	width: 100%;
+	max-width: 50%;
+	height: 100vh;
+	border: 2px solid #37210f;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.contactbox{
+	border: 1px solid #764c25;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 90vh;
+	margin: auto auto;
+}
+.contactbox h1{
+	font-size: 2.5rem;
+	padding: 10px 0px;
+	box-sizing: border-box;
+	color: #37210f;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.contactbox p{
+	line-height: 1.6;
+	letter-spacing: 1px;
+	padding: 10px 0px;
+	box-sizing: border-box;
+	color: #764c25;
+}
+.contactbox h3 a{
+	font-size: 1.2rem;
+	color: #764c25;
+	letter-spacing: 2px;
+	font-weight: bold;
+	padding: 20px 0px;
+	box-sizing: border-box;
+	line-height: 2;
+}
+
+.contactbox h3{
+	font-size: 1.5rem;
+	color: #37210f;
 }
 /*-------------contact section 1 css starts here--------------*/
 @media only screen and (min-width:200px) and (max-width:1336px){
@@ -26,6 +75,35 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		width: 100%;
+		height: auto;
+	}
+	.csec-01 iframe{
+		width: 100%;
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 10px;
+		box-sizing: border-box;
+		object-fit: cover;
+
+
+
+	}
+	.contactleft{
+		width: 100%;
+		height: auto;
+
+	}
+	.contactright{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		max-width: 100%;
+		height: auto;
+	}
+	.contactbox{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 		height: auto;
 	}
 }
